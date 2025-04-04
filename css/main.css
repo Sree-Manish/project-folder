@@ -989,6 +989,8 @@ nav .search-icon{
     display: grid;
     grid-template-columns: auto 656px;
     width: 1254px;
+    color: #322D2D;
+    font-family: "New Rail Alphabet";
 }
 
 .reviews{
