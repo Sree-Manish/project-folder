@@ -1,0 +1,1028 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    --nwidth: 100vw/1456;
+    --secwidth: 1328px;
+    --site-gold: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    --GD2: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+}
+
+@font-face {
+    font-family: "New Rail Alphabet";   
+    src: url('./../assets/fonts/NewRailAlphabet-White.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "New Rail Alphabet Bold";   
+    src: url('./../assets/fonts/NewRailAlphabet-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "New Rail Alphabet Light";   
+    src: url('./../assets/fonts/NewRailAlphabet-Light\ \(1\).otf') format('opentype');
+    font-weight: 300;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span{
+    display: inline-block;
+}
+
+body{
+    min-height: 100vh;
+    color: #322D2D;
+}
+
+.rect-shade{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 1467px;
+    left: 0px;
+    top: -117px;
+    background: linear-gradient(180deg, rgba(243, 243, 243, 0.75) 0%, rgba(184, 184, 184, 0.8) 59.38%, rgba(243, 243, 243, 0.25) 100%);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 106px;
+}
+
+header>.head-offer{
+    height: 49.36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    border-bottom-right-radius: 4.05px;
+    border-bottom-left-radius: 4.05px;
+    background: #322D2D;
+    cursor: pointer;
+}
+
+header>.head-offer>div{
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "New Rail Alphabet";
+    font-size: 14.16px;
+    line-height: 16.18px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+
+header>nav{
+    display: flex;
+    padding-inline: 64.72px;
+    align-items: center;
+    height: 72.81px;
+    width: 100%;
+}
+
+nav>div{
+    display: flex;
+    align-items: center;
+    gap: 32.26px;
+    width: 100%;
+}
+
+nav .logo>img{
+    width: 179.4px;
+    height: 30.4px; 
+}
+
+nav .nav-list{
+    display:flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav .nav-list>ul{
+    display: flex;
+    gap: 32.26px;
+    flex-direction: row;
+}
+
+nav li{
+    font-family: "New Rail Alphabet";
+    color: #322D2D;
+    font-weight: bold;
+    font-size: 16.18px;
+    line-height: 150%;
+    list-style: none;
+}
+
+nav li:nth-child(2){
+    display: flex;
+    gap: 4.05px;
+}
+
+.nav-rest{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+nav .search-icon{
+    width: 38px;
+    height: 38px;
+}
+
+.search-icon>img{
+    position: relative;
+    width: 26.71px;
+    height: 26.71px;
+    top: 5.64px;
+    left: 5.64px;
+    color: #322D2D;
+    cursor: pointer;
+}
+
+.nav-rest button{
+    width: 174.86px;
+    height: 41.27px;
+    border-radius: 505.64px;
+    border: 0;
+    border-bottom-width: 1.01px;
+    padding-top: 12.14px 24.27px;
+    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    font-family: "New Rail Alphabet";
+    font-size: 18.2px;
+    line-height: 16.18px;
+}
+
+.sec-1{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin: auto;
+    font-family: "New Rail Alphabet";
+    width: var(--secwidth);
+    margin: 90px auto 0;
+}
+
+.sec-1 .first{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    min-width: 646px;
+    flex-grow: 1;
+    height: 371px;
+}
+
+.sec-1 .first .rate-quote{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 136px;
+}
+
+.sec-1 .rating>div{
+    display: inline-flex;
+    background: linear-gradient(90.05deg, rgba(255, 255, 255, 0.36) 0.04%, rgba(252, 252, 252, 0.12) 102.54%);
+    border: 0.5px solid;
+    border-image-source: linear-gradient(90.05deg, rgba(255, 255, 255, 0.5) 0.04%, rgba(252, 252, 252, 0.4) 102.54%);
+    width: 518px;
+    height: 46px;
+    gap: 8px;
+    border-radius: 10000px;
+    border-width: 0.5px;
+    padding: 5px 16px 5px 8px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.sec-1 .rating>div>div{
+    display: inline-flex;
+    width: 150px;
+    height: 36px;
+    border-radius: 100px;
+    padding: 8px 12px;
+    background: #FFFFFFB2;
+    font-size: 16px;
+    align-items: center;
+}
+
+.sec-1 .second>div{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.sec-1 .quote{
+    font-family: "New Rail Alphabet Light";
+    font-size: 56px;
+    height: 63px;
+    line-height: 112%;
+    letter-spacing: -1.33px;
+}
+
+.sec-1 .benefits{
+    display: flex;
+    gap: 24px;
+    height: 106px;
+    width: 572px;
+}
+
+.sec-1 .benefits>div{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+}
+
+.sec-1 .benefits div>span:first-child{
+    font-family: "New Rail Alphabet Bold";
+    font-size: 72px;
+    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    background-clip: text;
+    color: transparent;
+    height: 50px;
+    line-height: 58px;
+}
+
+.sec-1 .benefits div>span>span{
+    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: -10%;
+}
+
+.sec-1 .benefits div>span:last-child{
+    font-size: 22px;
+    line-height: 104%;
+}
+
+.sec-1 .shop-button button{
+    border-radius: 505.64px;
+    border: 0;
+    border-bottom-width: 1.01px;
+    padding: 16px 28px;
+    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    font-family: "New Rail Alphabet Light";
+    font-size: 18.2px;
+    line-height: 16.18px;
+}
+
+.sec-1 .second img{
+    object-position: center center;
+    object-fit: cover;
+}
+
+.title1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80.4px auto 140px;
+    font-family: "New Rail Alphabet";
+    font-size: 36px;
+    letter-spacing: -2.02px;
+    width: calc(892*var(--nwidth));
+    height: 81px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%) 1;
+    background-clip: border-box;
+}
+
+.sec-2{
+    display: flex;
+    width: var(--secwidth);
+    margin: 0 auto;
+    align-items: center;
+    gap: 48px;
+}
+
+.sec-2 .second{
+    font-family: "New Rail Alphabet";
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.sec-2 h4{
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 3.03px;
+    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.sec-2 p:first-child(){
+    line-height: 100%;
+    font-size: 36px;
+}
+
+.sec-2 p:nth-child(2){
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.sec-2 .button{
+    font-size: 20px;
+    line-height: 16.18px;
+    border-radius: 505.64px;
+    padding: 12.14px 24.27px;
+    background: linear-gradient(92.57deg, #CAA648 -34.45%, #CAA648 -12.71%, #D5B147 4.32%, #E4C267 36.63%, #E2C065 85.1%, #DBB95E 102.87%, #D0AE52 114.18%, #C09F41 119.07%, #BB9A3C 127.1%);
+}
+
+.features{
+    margin: 40.5px auto 83px;
+    display: flex;
+    align-items: center;
+    padding: 28.5px 19.9px;
+    width: var(--secwidth);
+    background: #F9F9F9;
+}
+
+.features span{
+    margin-right: 13.68px;
+    font-family: "New Rail Alphabet Bold";
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #9E6718 0%, #FFB545 115.92%);
+    background-clip: text;
+    color: transparent;
+}
+
+.features .feat{
+    display: flex;
+    align-items: center;
+    gap: 16.28px;
+    height: 65.14px;
+    flex-grow: 1;
+}
+
+.features .feat img{
+    width: 45.98px;
+    height: 45.98px;
+}
+
+.features .feat div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 7.66px;
+}
+
+.features .feat p:first-child{
+    font-family: "New Rail Alphabet";
+    font-size: 20px;
+    line-height: 22.99px;
+    color: #322D2D;
+}
+
+.features .feat p:nth-child(2){
+    font-family: "New Rail Alphabet";
+    font-size: 16px;
+    line-height: 19.16px;
+    color: #666666;
+}
+
+.companies{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1254px;
+    margin: auto;
+}
+
+.companies span{
+    font-family: "New Rail Alphabet Bold";
+    font-size: 24.27px;
+    line-height: 140%;
+    color: #322D2D;
+}
+
+.product-view{
+    margin-block: 92px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 108px;
+    width: var(--secwidth); 
+}
+
+.carousel{
+    width: 100%;
+    height: 672.99px;
+    background: #F9F9F9 ;
+    padding: 18.31px 28.91px;
+    margin-bottom: 30px;
+}
+
+.carousel-display{
+    white-space: no-wrap;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.carousel-display>img{
+    width: 573px;
+    height: 576px;
+}
+
+/* #D9D9D9 */
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: unset;
+    border: 1px solid #322D2D;
+}
+
+.dot.active{
+    background-color: #322D2D;
+}
+
+.carousel button{
+    width: 38.9px;
+    height: 38.9px;
+    border-radius: 50%;
+    border: 0.81px solid #322D2D;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.carousel button img{
+    position: relative;
+    top: 2px;
+}
+
+.gallery .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 28px;
+}
+
+.gallery .images>div{
+    width: 133px;
+    height: 129.2px;
+    overflow: hidden;
+}
+
+.gallery .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10.6px;
+}
+
+.product .details{
+    font-family: "New Rail Alphabet";
+}
+
+.product .details h3{
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 8px;
+    color: #322D2D;
+}
+
+.product .details>span{
+    display: flex;
+    gap: 6px;
+    font-size: 13px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.product .details .prod-desc{
+    font-size: 16.18px;
+    line-height: 100%;
+    text-align: justify;
+    margin-bottom: 31px;
+}
+
+.product .details>p:nth-of-type(2){
+    font-size: 24px;
+    line-height: 20.23px;
+    color: #322D2D;
+    margin-bottom: 17px;
+}
+
+.product .flav-cont{
+    display: grid;
+    gap: 17px;
+    width: 480px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 31px;
+}
+
+.product .flavors{
+    padding: 16px;
+    position: relative;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+}
+
+.product .flavors :is(input,label){
+    font-family: "New Rail Alphabet";
+    color: #919798;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.product .flavors :is(input:checked){
+    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    background-clip: text;
+}
+
+.product .flavors img{
+    width: 150%; 
+    position: relative;
+    transform: translate(-15%);
+}
+
+.product .flavors div:nth-of-type(2){
+    width: 100%;
+    overflow: hidden;
+}
+
+.product .flavors span{
+    width: 78.14px;
+    height: 17.12px;
+    border-top-left-radius: 6.07px;
+    border-bottom-right-radius: 6.07px;
+    border-bottom-width: 0.57px;
+    padding: 6.84px 6px;
+    padding-bottom: 14px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, #A27533 0%, #FAC568 100%);
+    font-weight: 700;
+    font-size: 10.26px;
+    line-height: 9.12px;
+}
+
+.product .pop-kit{
+    background: linear-gradient(90deg, #A27533 0%, #FAC568 100%);
+    width: 609px;
+    height: 43.5px;
+    top: 427.85px;
+    border-top-left-radius: 6.07px;
+    border-top-right-radius: 6.07px;
+    border-width: 1px solid #B8B8B8;
+    color: white;
+    font-weight: 700;
+    font-size: 20.23px;
+    line-height: 24.27px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.product .kits{
+    padding: 16px 22px;
+    height: 56px;
+    width: 100%;
+    border: 1px solid #B8B8B8;
+    border-radius: 6px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 16px auto;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: #322D2D;
+    transition: height 0.5s ease;
+}
+
+.product .kits:has(input:checked){
+    height: 546px;
+}
+
+.product .kits .sub-name{
+    font-size: 24px;
+    line-height: 20.23px;
+    margin-bottom: 18px;
+}
+
+.product .kits .sub-incl{
+    display: flex;
+    gap: 16px;
+    height: 220px;
+    margin-bottom: 26px;
+}
+
+.product .sub-incl>div{
+    width: 166.45px;
+    height: 219.5px;
+    border-width: 1.01px;
+    border-radius: 6.07px;
+    border: 1px solid #919798;
+    padding: 12px;
+}
+
+.product .sub-incl img:not(img[alt='product set']){
+    width: 140%; 
+    transform: translate(-13%);
+}
+
+.product .sub-incl img[alt='product set']{
+    width: 85%; 
+    transform: translate(8%,15%);
+}
+
+.product .kit-det p{
+    font-family: "New Rail Alphabet";
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #322D2D;
+    margin-bottom: 6px;
+}
+
+.product .kit-det p::before{
+    content: '\2714';
+    margin-right: 6px;
+}
+
+.product .details>button{
+    width: 100%;
+    border-radius: 505.64px;
+    border-bottom-width: 1px;
+    padding: 12.14px 24.27px;
+    background: #667744;
+    font-size: 18.2px;
+    line-height: 16px;
+    color: white;
+}
+
+.product .qualities{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.product .qualities>div{
+    display: flex;
+    align-items: center;
+}
+
+.shilajit{
+    width: var(--secwidth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    font-family: "New Rail Alphabet";
+    gap: 32px;
+}
+
+.shilajit>div>h3{
+    font-size: 36px;
+    line-height: 112%;
+    letter-spacing: -1.33px;
+    margin-bottom: 24px;
+    height: 32px;
+}
+
+.shilajit>div>h4{
+    font-family: "New Rail Alphabet Bold";
+    font-size: 12px;
+    letter-spacing: 3.03px;
+    margin-bottom: 40px;
+}
+
+.shilajit .bens{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 32px;
+}
+
+.shilajit .ben{
+    display: grid;
+    grid-template-columns: 44px auto;
+    border-radius: 17px;
+    gap: 19px;
+    padding: 20px 24px;
+    background: #FAFAF8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.shilajit .ben img{
+    width: 44px;
+    height: 44px;
+}
+
+.shilajit .ben h4{
+    font-family: "New Rail Alphabet Bold";
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 7px;
+}
+
+.shilajit .ben p{
+    font-family: "New Rail Alphabet";
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(102, 102, 102, 1);
+}
+
+.shilajit button{
+    margin-top: 49px;
+    background: #E2C065;
+    border: none;
+    border-radius: 505.64px;
+    padding: 12.14px 24.27px;
+    display: flex;
+    justify-content: center;
+    gap: 29.33px;
+    align-items: center;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.sub-now{
+    background-image: url("../assets/images/Sub-now.jpg");
+    margin: 90px auto 92px;
+    width: var(--secwidth);
+    height: 490px;
+    background-size: 100% auto;
+    background-position: center center;
+    background-clip: padding-box;
+    padding: 60px 72px;
+}
+
+.sub-now h4{
+    font-family: "Oxanium";
+    font-weight: 400;
+    font-size: 12.4;
+    line-height: 100%;
+    letter-spacing: 3.14px;
+    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 53px;
+}
+
+.sub-now p{
+    font-family: "New Rail Alphabet";
+    font-size: 41px;
+    line-height: 100%;
+    margin-bottom: 18px;
+}
+
+.sub-now .sub-spans{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 8px;
+    margin-bottom: 54px;
+}
+
+.sub-now span{
+    border-radius: 17.31px;
+    padding: 9px 16px;
+    background: rgba(214, 213, 213, 1);
+    text-transform: uppercase;
+}
+
+.sub-now button{
+    border: none;
+    border-radius: 523.66px;
+    padding: 12.57px 25.14px;
+    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    font-size: 20px;
+    line-height: 16px;
+}
+
+.ritual{
+    font-family: "New Rail Alphabet";
+    width: var(--secwidth);
+    margin: 0 auto 92px;;
+    display: grid;
+    grid-template-columns: auto 625px;
+    gap: 150px;
+}
+
+.ritual-steps{
+    display: grid;
+    grid-template-columns: 46px auto;
+    gap: 46px 40px;
+    margin-bottom: 84px;
+}
+
+.ritual>div>h3{
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-bottom: 14px;
+}
+
+.ritual>div>p{
+    font-size: 20px;
+    line-height: 24.27px;
+    color: rgba(102, 102, 102, 1);
+    margin-bottom: 52px;
+}
+
+.ritual-steps>div:nth-of-type(2n+1){
+    font-size: 72px;
+    line-height: 94px;
+    text-align: center;
+    opacity: 0.2;
+    position: relative;
+    bottom: 20px;
+}
+
+.ritual-steps>div:nth-of-type(2n) h4{
+    font-family: "New Rail Alphabet Bold";
+    font-size: 20px;
+    line-height: 24.27px;
+    background: var(--GD2);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+}
+
+.ritual-steps>div:nth-of-type(2n) p{
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(102, 102, 102, 1);
+}
+
+.ritual button{
+    width: 448px;
+    height: 42px;
+    border-radius: 505.64px;
+    padding: 12.14px 24.27px;
+    background: var(--site-gold);
+    font-size: 20px;
+    line-height: 16px;
+    border: none;
+    color: black;
+}
+
+.video-div{
+    background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%);
+    border-radius: 14px;
+    width: 625px;
+    height: 712px;
+    position: relative;
+}
+
+.reports{
+    width: 100vw;
+    background: url("../assets/images/reports.jpg"), rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding-block: 56px;
+    padding-inline:  calc((100vw - 1120px)*0.5);
+    display: grid;
+    grid-template-columns: 203px 125px 187px auto;
+    gap: 86px;
+    color: white;
+    margin-bottom: 38px;
+}
+
+.reports h4{
+    font-family: "New Rail Alphabet Bold";
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 19px;
+}
+
+.reports p{
+    font-family: "New Rail Alphabet";
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.compare{
+    width: 950px;
+    margin: 0 auto 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "New Rail Alphabet";
+}
+
+.compare svg{
+    width: 29px;
+    height: 29px;
+}
+
+.compare table img{
+    width: 50px;
+    height: 100px;
+}
+
+.compare h3{
+    font-size: 40.45px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.compare table td{
+    border-bottom: 1px solid rgba(102, 102, 102, 1);
+    text-align: center;
+    padding: 19px 15px;
+}
+
+.compare table td:first-of-type{
+    background: #F0EEE6;
+    border-bottom: 1px dashed rgba(102, 102, 102, 1);
+}
+
+.compare table th{
+    border-bottom: 1px solid rgba(102, 102, 102, 1);
+    padding: 19px 15px;
+    text-align: left;
+}
+
+.compare button{
+    background: var(--site-gold);
+    color: black;
+    border: none;
+    border-radius: 505.64px;
+    border-bottom-width: 1px;
+    padding: 12.14px 24.27px;
+    font-size: 20px;
+    line-height: 16px;
+}
+
+.found-det p{
+    font-size: 40.45px;
+    line-height: 100%;
+    margin-bottom: 32px;
+}
+
+.found-det button{
+    padding: 12.14px 24.27px;
+    border-radius: 505.64px;
+    border: none;
+    border-bottom-width: 1px;
+    font-family: "Oxanium";
+    font-weight: 300;
+    font-size: 18.2px;
+    line-height: 16px;
+    background: var(--site-gold);
+}
+
+.found-det{
+    display: grid;
+    grid-template-columns: auto 656px;
+    width: 1254px;
+}
+
+.reviews{
+    background: #F0EEE6;
+    width: 100%;
+    padding: 64px calc((100vw - 1328px)/2);
+    font-family: "New Rail Alphabet";
+}
+
+.reviews>h3{
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.reviews>p{
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.review-cont{
+    display: flex;
+    gap: 24px;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.review-cont .review{
+    width: 432px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: white;
+}
