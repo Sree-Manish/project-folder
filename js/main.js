@@ -1,3 +1,12 @@
+
+
+let hamicon = document.querySelector(".hamburger")
+hamicon.addEventListener("click",()=>{
+    console.log("clicked")
+    let cur_size = document.querySelector("nav>div")
+    cur_size.clientHeight = cur_size.clientHeight == "42px" ? "200px" : "42px" 
+})
+
 let companies = document.querySelector(".companies")
 let text = ""
 for(let i=1;i<6;i++){
@@ -110,6 +119,13 @@ revnext.addEventListener("click",()=>{
     revdots[rev_sno-1].classList.add("active")
 })
 
+let search = document.querySelector("nav .search-icon")
+search.addEventListener("click",()=>{
+    let sbox = document.querySelector(".search-box")
+    let ullist = document.querySelector(".nav-list ul")
+    sbox.style.display = sbox.style.display == "flex" ? "none" : "flex"
+    ullist.style.display = ullist.style.display == "none" ? "flex" : "none"
+})
 
 // prev.addEventListener("click", ()=>{
 //     if(img_sno===2) prev.setAttribute("disabled") = true;

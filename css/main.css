@@ -1,13 +1,15 @@
+
 ::-webkit-scrollbar{
     display: none;
 }
 
 html{
     --nwidth: 100vw/1456;
-    --secwidth: 1328px;
+    --secwidth: min(80vw,1328px);
     --site-gold: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
     --GD2: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
     scroll-behavior: smooth;
+    --site-black: #322D2D;
 }
 
 @font-face {
@@ -43,8 +45,11 @@ span{
 }
 
 body{
-    min-height: 100vh;
     color: #322D2D;
+}
+
+button{
+    cursor: pointer;
 }
 
 .rect-shade{
@@ -60,18 +65,18 @@ body{
 header{
     display: flex;
     flex-direction: column;
-    height: 106px;
+    font-family: "New Rail Alphabet";
 }
 
 header>.head-offer{
-    height: 49.36px;
+    height: 46px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0px;
+    border: none;
     border-bottom-right-radius: 4.05px;
     border-bottom-left-radius: 4.05px;
-    background: #322D2D;
+    background: var(--site-black);
     cursor: pointer;
 }
 
@@ -80,50 +85,81 @@ header>.head-offer>div{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "New Rail Alphabet";
-    font-size: 14.16px;
-    line-height: 16.18px;
+    font-size: 14px;
+    line-height: 16px;
     text-transform: uppercase;
     color: #FFF;
 }
 
 
 header>nav{
-    display: flex;
+    margin-top: 10px;
     padding-inline: 64.72px;
-    align-items: center;
-    height: 72.81px;
     width: 100%;
 }
 
 nav>div{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 32.26px;
     width: 100%;
+    height: 42px;
+    overflow-y: scroll;
 }
 
 nav .logo>img{
     width: 179.4px;
-    height: 30.4px; 
+    height: 30.4px;
+}
+
+.hamburger{
+    display: none;
+    text-align: right;
+}
+
+nav .search-box{
+    background-color: #D9D9D9;
+    font-family: "Inter";
+    font-weight: 400;
+    width: 100%;
+    border-radius: 20px;
+    display: none;
+    outline: none;
+}
+
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 12px 40px;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    color: black;
+    outline: none;
+}
+
+.search-box input::placeholder{
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
 }
 
 nav .nav-list{
     display:flex;
     justify-content: center;
-    flex-grow: 1;
+    grid-column: 2/6;
 }
 
 nav .nav-list>ul{
     display: flex;
-    gap: 32.26px;
+    gap: 32px;
     flex-direction: row;
 }
 
 nav li{
-    font-family: "New Rail Alphabet";
-    color: #322D2D;
-    font-weight: bold;
+    color: var(--site-black);
+    font-weight: 700;
     font-size: 16.18px;
     line-height: 150%;
     list-style: none;
@@ -145,13 +181,13 @@ nav .search-icon{
     height: 38px;
 }
 
-.search-icon>img{
+nav .search-icon>img{
     position: relative;
     width: 26.71px;
     height: 26.71px;
     top: 5.64px;
     left: 5.64px;
-    color: #322D2D;
+    color: var(--site-black);
     cursor: pointer;
 }
 
@@ -162,7 +198,7 @@ nav .search-icon{
     border: 0;
     border-bottom-width: 1.01px;
     padding-top: 12.14px 24.27px;
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    background: var(--site-gold);
     font-family: "New Rail Alphabet";
     font-size: 18.2px;
     line-height: 16.18px;
@@ -228,7 +264,7 @@ nav .search-icon{
 
 .sec-1 .quote{
     font-family: "New Rail Alphabet Light";
-    font-size: 56px;
+    font-size: 3.5rem;
     height: 63px;
     line-height: 112%;
     letter-spacing: -1.33px;
@@ -251,7 +287,7 @@ nav .search-icon{
 .sec-1 .benefits div>span:first-child{
     font-family: "New Rail Alphabet Bold";
     font-size: 72px;
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    background: var(--site-gold);
     background-clip: text;
     color: transparent;
     height: 50px;
@@ -259,7 +295,7 @@ nav .search-icon{
 }
 
 .sec-1 .benefits div>span>span{
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    background: var(--site-gold);
     background-clip: text;
     color: transparent;
     font-size: 25px;
@@ -278,10 +314,11 @@ nav .search-icon{
     border: 0;
     border-bottom-width: 1.01px;
     padding: 16px 28px;
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    background: var(--site-gold);
     font-family: "New Rail Alphabet Light";
     font-size: 18.2px;
     line-height: 16.18px;
+    font-weight: 700;
 }
 
 .sec-1 .second img{
@@ -299,9 +336,9 @@ nav .search-icon{
     letter-spacing: -2.02px;
     width: calc(892*var(--nwidth));
     height: 81px;
-    border: 2px solid transparent;
-    border-image: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%) 1;
-    background-clip: border-box;
+    border: 2px solid;
+    border-image: var(--site-gold) 1;
+    border-radius: 40px;
 }
 
 .sec-2{
@@ -314,36 +351,39 @@ nav .search-icon{
 
 .sec-2 .second{
     font-family: "New Rail Alphabet";
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
 }
 
 .sec-2 h4{
     font-size: 24px;
     line-height: 100%;
     letter-spacing: 3.03px;
-    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    background: var(--GD2);
     background-clip: text;
     color: transparent;
+    margin-bottom: 27px;
 }
 
-.sec-2 p:first-child(){
+.sec-2 p:first-child{
     line-height: 100%;
     font-size: 36px;
+    margin-bottom: 18px;
 }
 
 .sec-2 p:nth-child(2){
     font-size: 21px;
     line-height: 30px;
+    margin-bottom: 27px;
 }
 
 .sec-2 .button{
+    font-family: "New Rail Alphabet";
+    font-weight: 700;
     font-size: 20px;
     line-height: 16.18px;
     border-radius: 505.64px;
     padding: 12.14px 24.27px;
     background: linear-gradient(92.57deg, #CAA648 -34.45%, #CAA648 -12.71%, #D5B147 4.32%, #E4C267 36.63%, #E2C065 85.1%, #DBB95E 102.87%, #D0AE52 114.18%, #C09F41 119.07%, #BB9A3C 127.1%);
+    width: 310px;
 }
 
 .features{
@@ -390,7 +430,7 @@ nav .search-icon{
     font-family: "New Rail Alphabet";
     font-size: 20px;
     line-height: 22.99px;
-    color: #322D2D;
+    color: var(--site-black);
 }
 
 .features .feat p:nth-child(2){
@@ -412,7 +452,7 @@ nav .search-icon{
     font-family: "New Rail Alphabet Bold";
     font-size: 24.27px;
     line-height: 140%;
-    color: #322D2D;
+    color: var(--site-black);
 }
 
 .product-view{
@@ -449,18 +489,18 @@ nav .search-icon{
     height: 10px;
     border-radius: 50%;
     background-color: unset;
-    border: 1px solid #322D2D;
+    border: 1px solid var(--site-black);
 }
 
 .dot.active{
-    background-color: #322D2D;
+    background-color: var(--site-black);
 }
 
 .carousel button{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 0.81px solid #322D2D;
+    border: 0.81px solid var(--site-black);
 }
 
 :is(.carousel, .reviews) button img{
@@ -495,7 +535,7 @@ nav .search-icon{
     font-size: 36px;
     line-height: 100%;
     margin-bottom: 8px;
-    color: #322D2D;
+    color: var(--site-black);
 }
 
 .product .details>span{
@@ -516,7 +556,7 @@ nav .search-icon{
 .product .details>p:nth-of-type(2){
     font-size: 24px;
     line-height: 20.23px;
-    color: #322D2D;
+    color: var(--site-black);
     margin-bottom: 17px;
 }
 
@@ -544,7 +584,7 @@ nav .search-icon{
 }
 
 .product .flavors :is(input:checked){
-    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    background: var(--GD2);
     background-clip: text;
 }
 
@@ -605,7 +645,7 @@ nav .search-icon{
     grid-template-columns: 16px auto;
     gap: 10px;
     margin-bottom: 12px;
-    color: #322D2D;
+    color: var(--site-black);
     transition: height 0.5s ease;
 }
 
@@ -650,7 +690,7 @@ nav .search-icon{
     font-size: 16px;
     line-height: 120%;
     text-transform: capitalize;
-    color: #322D2D;
+    color: var(--site-black);
     margin-bottom: 6px;
 }
 
@@ -773,7 +813,7 @@ nav .search-icon{
     font-size: 12.4;
     line-height: 100%;
     letter-spacing: 3.14px;
-    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    background: var(--GD2);
     background-clip: text;
     color: transparent;
     margin-bottom: 53px;
@@ -804,7 +844,7 @@ nav .search-icon{
     border: none;
     border-radius: 523.66px;
     padding: 12.57px 25.14px;
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    background: var(--site-gold);
     font-size: 20px;
     line-height: 16px;
 }
@@ -938,21 +978,41 @@ nav .search-icon{
     margin-bottom: 57px;
 }
 
+.compare table{
+    width: 100%;
+}
+
 .compare table td{
     border-bottom: 1px solid rgba(102, 102, 102, 1);
     text-align: center;
-    padding: 19px 15px;
+    padding: 12px 15px;
+    width: 150px;
+    height: 38px;
+    font-size: 16px;
 }
 
 .compare table td:first-of-type{
     background: #F0EEE6;
     border-bottom: 1px dashed rgba(102, 102, 102, 1);
+    width: 200px;
+    font-size: 16px;
+}
+
+.compare table td img{
+    height: 90px; 
+    width: auto;
+}
+
+.compare table td:first-of-type img{
+    width: 127px;
+    height: 149px;
 }
 
 .compare table th{
     border-bottom: 1px solid rgba(102, 102, 102, 1);
     padding: 19px 15px;
     text-align: left;
+    height: 38px;
 }
 
 .compare button{
@@ -988,7 +1048,7 @@ nav .search-icon{
     display: grid;
     grid-template-columns: auto 656px;
     width: 1254px;
-    color: #322D2D;
+    color: var(--site-black);
     font-family: "New Rail Alphabet";
 }
 
@@ -1039,7 +1099,7 @@ nav .search-icon{
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    border: 1px solid #322D2D;
+    border: 1px solid var(--site-black);
 }
 
 :is(.carousel, .reviews) button:hover{
@@ -1088,7 +1148,7 @@ nav .search-icon{
 .FAQs .FAQ{
     padding: 20px 24px;
     margin-bottom: 16px;
-    border-bottom: 1px solid #322D2D;
+    border-bottom: 1px solid var(--site-black);
     font-size: 20px;
     line-height: 150%;
 }
@@ -1152,7 +1212,7 @@ nav .search-icon{
 
 
 footer {
-    background-color: #322D2D;
+    background-color: var(--site-black);
     color: white;
     padding-block: 40px;
     font-family: "New Rail Alphabet";
@@ -1246,34 +1306,91 @@ footer {
     flex-basis: 100%;
 }
 
-@media (max-width: 768px) {
-footer {
-    padding: 40px 20px;
-}
-
-.footer-left {
-    flex-direction: column;
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-.footer-nav {
-    gap: 40px;
-}
-
-.newsletter {
-    max-width: 100%;
-    margin-top: 10px;
-}
-
-.newsletter-input {
-    width: calc(100vw - 120px);
-}
-
-}
-
-@media (max-width: 560px){
-    .nav-column, .socials{
-        width: 100px;
+@media (max-width: 1024px){
+    
+    nav>div{
+        flex-direction:column;
     }
+
+    nav .logo{
+        grid-column: 1/6;
+    }
+
+    .hamburger{
+        display: block;
+        grid-column: 6;
+    }
+
+    nav .nav-list{
+        width: 100%;
+        grid-row: 2;
+        grid-column: 1/5;
+    }
+
+    nav .nav-list ul{
+        width: 100%;
+    }
+
+    nav .nav-list li{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav .nav-rest{
+        width: 100%;
+        grid-row: 2;
+        grid-column: 5/7;
+    }
+    
+    .sec-1, .sec-2{
+        flex-direction: column;
+    }
+
+    .compare{
+        width: 90vw;
+    }
+
+    
+
 }
+
+@media (max-width: 768px) {
+
+    nav .nav-list{
+        grid-column: 1/7;
+    }
+
+    nav .nav-rest{
+        grid-row: 3;
+        grid-column: 1/7;
+    }
+
+    nav .nav-list ul{
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 40px 20px;
+    }
+    
+    .footer-left {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .footer-nav {
+        gap: 40px;
+    }
+    
+    .newsletter {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+    
+    .newsletter-input {
+        width: calc(100vw - 120px);
+    }
+    
+    }
+    

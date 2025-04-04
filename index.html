@@ -9,6 +9,13 @@
 </head>
 
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("img").forEach((el) => {
+            el.setAttribute("loading", "lazy");
+          });
+        });
+      </script>
     <script src="https://kit.fontawesome.com/c23e4c2c32.js" crossorigin="anonymous"></script>
     <div class="rect-shade"></div>
     <header>
@@ -19,6 +26,9 @@
             <div>
                 <div class="logo">
                     <img src="./assets/images/Masked-Logo.png" alt="brand logo" />
+                </div>
+                <div class="hamburger">
+                    <img class="ham-icon" src="./assets/images/hamgurger.png" alt="" width="28px" height="28px">
                 </div>
                 <div class="nav-list">
                     <ul>
@@ -37,6 +47,9 @@
                         <li>Blog</li>
                         <li>Contact</li>
                     </ul>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search For Products..."></input>
+                    </div>
                 </div>
                 <div class="nav-rest">
                     <div class="search-icon">
@@ -525,9 +538,9 @@
                 <tr>
                     <th>BENEFITS</th>
                     <td><img src="./assets/images/compare/compare1.png" alt=""></td>
-                    <td><img src="./assets/images/compare/compare2.jpg" alt=""><span>MUD/WTR</span></td>
-                    <td><img src="./assets/images/compare/compare3.png" alt=""><span>RYZE</span></td>
-                    <td><img src="./assets/images/compare/compare4.png" alt=""><span>EVERYDAY DOSE</span></td>
+                    <td><img src="./assets/images/compare/compare2.jpg" alt=""><p>MUD/WTR</p></td>
+                    <td><img src="./assets/images/compare/compare3.png" alt=""><p>RYZE</p></td>
+                    <td><img src="./assets/images/compare/compare4.png" alt=""><p>EVERYDAY DOSE</p></td>
                 </tr>
                 <tr>
                     <th>Potency Concentration</th>
