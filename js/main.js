@@ -25,7 +25,7 @@ quals.innerHTML = text
 
 let reviews = document.querySelector(".reviews .review-cont")
 text=""
-for(let i=1;i<9;i++){
+for(let i=1;i<7;i++){
     text += `<div class="review">
                     <div>
                             <svg width="16px" height="16px"><use href="#star"></use></svg>
@@ -47,36 +47,67 @@ for(let i=1;i<9;i++){
 reviews.innerHTML += text
 
 
-const prev = document.querySelector(".prev")
-const next = document.querySelector(".next")
-const dots = document.querySelector(".dots").children
+const carprev = document.querySelector(".carousel .prev")
+const carnext = document.querySelector(".carousel .next")
+const cardots = document.querySelector(".carousel .dots").children
 const cardis = document.querySelector(".carousel-display")
 const carimg = document.querySelector(".carousel-display").children
 
 let carimg_width = carimg[0].clientWidth
 let img_sno = 1
 
-prev.addEventListener("click",()=>{
-    if(img_sno===2) prev.disabled = true
-    if(img_sno===carimg.length) next.disabled = false
+carprev.addEventListener("click",()=>{
+    if(img_sno===2) carprev.disabled = true
+    if(img_sno===carimg.length) carnext.disabled = false
     let leftval = Math.max(0,(img_sno-2)*573)
     console.log(leftval)
     cardis.scrollTo({left: leftval, top: 0, behavior: 'smooth'})
-    dots[img_sno-1].classList.remove("active")
+    cardots[img_sno-1].classList.remove("active")
     img_sno -= 1
-    dots[img_sno-1].classList.add("active")
+    cardots[img_sno-1].classList.add("active")
 })
 
-next.addEventListener("click",()=>{
-    if(img_sno===1) prev.disabled = false
-    if(img_sno===carimg.length-1) next.disabled = true
+carnext.addEventListener("click",()=>{
+    if(img_sno===1) carprev.disabled = false
+    if(img_sno===carimg.length-1) carnext.disabled = true
     let leftval = Math.max(0,(img_sno)*573)
     console.log(leftval)
     cardis.scrollTo({left: leftval, top: 0, behavior: 'smooth'})
-    dots[img_sno-1].classList.remove("active")
+    cardots[img_sno-1].classList.remove("active")
     img_sno += 1
-    dots[img_sno-1].classList.add("active")
+    cardots[img_sno-1].classList.add("active")
     console.log(img_sno)
+})
+
+const revprev = document.querySelector(".reviews .prev")
+const revnext = document.querySelector(".reviews .next")
+const revdots = document.querySelector(".review-dots").children
+const revcont = document.querySelector(".review-cont")
+const review = document.querySelector(".review-cont").children
+
+let rev_width = review[0].clientWidth
+let rev_sno = 1
+
+revprev.addEventListener("click",()=>{
+    if(rev_sno===2) revprev.disabled = true
+    if(rev_sno===review.length) revnext.disabled = false
+    let leftval = Math.max(0,(rev_sno-2)*456)
+    console.log(leftval)
+    revcont.scrollTo({left: leftval, top: 0, behavior: 'smooth'})
+    revdots[rev_sno-1].classList.remove("active")
+    rev_sno -= 1
+    revdots[rev_sno-1].classList.add("active")
+})
+
+revnext.addEventListener("click",()=>{
+    if(rev_sno===1) revprev.disabled = false
+    if(rev_sno===review.length-1) revnext.disabled = true
+    let leftval = Math.max(0,(rev_sno)*456)
+    console.log(leftval)
+    revcont.scrollTo({left: leftval, top: 0, behavior: 'smooth'})
+    revdots[rev_sno-1].classList.remove("active")
+    rev_sno += 1
+    revdots[rev_sno-1].classList.add("active")
 })
 
 
